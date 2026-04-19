@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();  
 }  
   
-// 🔥 SEARCH FILTER ADD  
+
 if(isset($_GET['location']) && $_GET['location'] != '') {  
     $location = $_GET['location'];  
   
