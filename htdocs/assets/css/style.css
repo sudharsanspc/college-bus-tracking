@@ -1,0 +1,394 @@
+/* RIT Logo Styles */
+.navbar {
+    background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+    padding: 0.8rem 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rit-logo {
+    height: 60px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.rit-logo:hover {
+    transform: scale(1.02);
+}
+
+.logo-text h2 {
+    color: #ff9800;
+    margin: 0;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-subtitle {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.7rem;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Nav Links - Clean & Consistent */
+.nav-links a {
+    text-decoration: none;
+    background: white;
+    color: #1a237e;
+    padding: 6px 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-links a i {
+    color: inherit;
+}
+
+.nav-links a:hover {
+    background: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+.nav-links a.active {
+    background: #ff9800;
+    color: white;
+}
+
+/* Nav Search */
+.nav-search {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 38px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.search-select {
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    background: transparent;
+    color: #1a237e;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-btn {
+    background: #ff9800;
+    border: none;
+    padding: 0 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.search-btn:hover {
+    background: #e68900;
+    box-shadow: 0 0 8px rgba(255,152,0,0.6);
+}
+
+/* User Info */
+.user-info {
+    background: rgba(255,255,255,0.15);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+/* College Header with Logo */
+.college-header {
+    background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.college-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.college-logo-large {
+    height: 80px;
+    width: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.college-text h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.college-text p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.85rem;
+}
+
+.accreditation-badge {
+    background: rgba(255,255,255,0.15);
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.accreditation-badge i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+/* Login Page Logo */
+.login-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-logo img {
+    height: 80px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.login-logo h1 {
+    color: #1a237e;
+    margin: 10px 0 5px;
+}
+
+.login-logo p {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* Form Group Alignment */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    width: 130px;
+    margin-right: 15px;
+    font-weight: 500;
+    text-align: left;  /* Changed from right to left - more common */
+}
+
+.form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .logo-container {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .rit-logo {
+        height: 45px;
+    }
+    
+    .logo-text h2 {
+        font-size: 1rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.6rem;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .nav-search {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .college-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .college-info {
+        justify-content: center;
+    }
+    
+    .college-logo-large {
+        height: 60px;
+    }
+    
+    .college-text h3 {
+        font-size: 1.2rem;
+    }
+}
+/* ================= MAP SECTION ================= */
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    border: 3px solid #1a237e;
+}
+
+/* Map Header */
+.map-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #1a237e, #283593);
+    color: white;
+    border-radius: 10px;
+}
+
+.map-header h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Live indicator */
+.live-indicator {
+    background: #ff9800;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255,152,0,0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255,152,0,0); }
+    100% { box-shadow: 0 0 0 0 rgba(255,152,0,0); }
+}
+
+/* Bus Cards Hover effect */
+.bus-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.bus-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    background: #f9f9ff;
+}
+
+/* Status badge glow */
+.status-active {
+    background: #4caf50;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    box-shadow: 0 0 8px rgba(76,175,80,0.6);
+}
+
+.status-inactive {
+    background: #9e9e9e;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.map-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.live-indicator {
+    background: red;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
