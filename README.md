@@ -88,7 +88,7 @@ http://localhost/college-bus-tracking
 👉 Add your hosted link here
 Example:
 
-http://ritbus.epizy.com
+https://ritbus.gt.tc
 
 
 
